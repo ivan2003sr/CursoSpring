@@ -12,6 +12,7 @@
 	<form:form action= "procesaFormulario" modelAttribute="elAlumno">
 	
 	Nombre: <form:input path="nombre"/> <!-- el path es el nombre del get y el set en minúsucula, debe coincidir. Al cargar llama al getter de la clase alumno y cuando se envía llama al setter -->
+	<form:errors path="nombre" style="color:red"></form:errors>
 	<br><br><br>
 	Apellido: <form:input path="apellido"/>
 	<br><br><br>
@@ -31,6 +32,18 @@
 	</form:select>	
 	
 	<br/><br/><br/>
+	
+	Mendoza <form:radiobutton path="provincia" value ="Mendoza"/>
+	Río Negro <form:radiobutton path="provincia" value ="Rio_Negro"/>
+	Buenos Aires <form:radiobutton path="provincia" value ="Buenos_Aires"/>
+	Neuquén <form:radiobutton path="provincia" value ="Neuquen"/>
+	
+	<br/><br/><br/>
+	
+	Inglés <form:checkbox path="idiomas" value ="Inglés"/>
+	Francés <form:checkbox path="idiomas" value ="Francés"/>
+	Alemán <form:checkbox path="idiomas" value ="Alemán"/>
+	
 	
 	<input type="submit" value="enviar">
 	

@@ -12,5 +12,11 @@ El alumno con nombre <strong>${elAlumno.nombre }</strong> y apellido <strong>${e
  
 La asignatura escogida es: <strong>${elAlumno.optativa }</strong>
 
+<br/>
+
+La provincia donde iniciará los estudios <strong>${elAlumno.nombre } ${elAlumno.apellido }</strong> será: <strong>${elAlumno.provincia}</strong>
+
+<br/>
+Los idiomas a estudiar serán: <strong>${elAlumno.idiomas }</strong>.
 </body>
 </html>

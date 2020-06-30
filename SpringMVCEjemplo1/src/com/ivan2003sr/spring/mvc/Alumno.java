@@ -1,5 +1,8 @@
 package com.ivan2003sr.spring.mvc;
 
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
+
 public class Alumno {
 	
 	
@@ -30,8 +33,29 @@ public class Alumno {
 	}
 
 
+	public String getProvincia() {
+		return provincia;
+	}
+
+	public void setProvincia(String provincia) {
+		this.provincia = provincia;
+	}
+
+
+	public String getIdiomas() {
+		return idiomas;
+	}
+
+	public void setIdiomas(String idiomas) {
+		this.idiomas = idiomas;
+	}
+
+	@NotNull
+	@Size(min=2,message=" Campo requerido")
 	private String nombre;
 	private String apellido;
 	private String optativa;
+	private String provincia;
+	private String idiomas;
 
 }
